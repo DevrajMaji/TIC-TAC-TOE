@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Tic-Tac-Toe </title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="matrix-bg"></div>
+
+<div class="wrap">
+  <h1>tic-tac-toe </h1>
+
+  <div class="controls">
+    <div>
+      <button id="btnHuman" class="active">Human vs Human</button>
+      <button id="btnAI">Human vs AI</button>
+    </div>
+    <div style="margin-left:auto">
+      <button id="resetBtn">Reset</button>
+    </div>
+  </div>
+
+  <div id="status" class="status">Player X's turn</div>
+
+  <div class="board-wrap">
+    <!-- svg for win line -->
+    <svg class="win-svg" viewBox="0 0 300 300" preserveAspectRatio="none" aria-hidden="true">
+      <line id="winline" x1="0" y1="0" x2="0" y2="0"></line>
+    </svg>
+
+    <div id="board" class="board" role="grid" aria-label="tic tac toe board"></div>
+  </div>
+
+  <div class="score">
+    <div>X: <span id="sx">0</span></div>
+    <div>O: <span id="so">0</span></div>
+    <div>Draws: <span id="sd">0</span></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
